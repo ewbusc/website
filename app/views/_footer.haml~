@@ -34,5 +34,6 @@
           %a{:href => "news#calendar"}
             View Upcoming Events
   .col-xs-12
+    %br
     %p.text-center
       %b &copy; 2014 University of South Carolina EWB-USA Student Chapter.
