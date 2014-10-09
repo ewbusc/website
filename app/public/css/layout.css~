@@ -8,7 +8,7 @@ body {
      -moz-background-size: cover;
        -o-background-size: cover;
           background-size: cover;
-  padding: 2em 0 10em 0;
+  padding: 2em 0 8em 0;
 }
 
 div.logo {
@@ -26,7 +26,7 @@ img.logo {
 
 .footer-bg {
   background-color: rgba(20, 20, 20, 0.7);
-  border-radius: 0 0 20px 20px;
+  border-radius: 0 0 12px 12px;
   color: rgba(255, 255, 255, 1.0);
 }
 .footer-bg a {
@@ -59,3 +59,13 @@ img.logo {
   color: rgba(255, 255, 255, 1.0);
   text-align: center;
 }
+
+#nav.affix {
+  background-color: rgba(0, 0, 0, 0.8);
+  position: fixed;
+    top: 0;
+    left: 0;
+  width: 100%;
+  z-index: 2;
+}
+

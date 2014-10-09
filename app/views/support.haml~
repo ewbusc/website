@@ -12,7 +12,7 @@
 %p EWB-USA is a non-profit company, and your donation is therefore tax deductible.
 
 .row
-  .col-xs-12.col-md-6
+  .col-xs-6
     %a.thumbnail{:href => "http://why.knovel.com/"}
       .row
         .col-xs-4
@@ -23,7 +23,7 @@
             Knovel is a web-based application integrating technical 
             information with analytical and search tools to drive 
             innovation and deliver answers engineers can trust. 
-  .col-xs-12.col-md-6
+  .col-xs-6
     %a.thumbnail{:href => "http://www.boeing.com/boeing/"}
       .row
         .col-xs-4
