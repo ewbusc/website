@@ -11,9 +11,11 @@
   %body
     .container
       .row
-        .hidden-xs.col-xs-12.logo
-          %a{:href => '/'}
-            %img.logo{:src => 'images/uscewb.png'}
+        .col-xs-12.logo
+          .row
+            .col-xs-12.col-md-6.col-md-offset-3
+              %a{:href => '/'}
+                %img.logo{:src => 'images/uscewb.png'}
         .col-xs-12.nav-bg
           = haml(:_navbar)
         .col-xs-12.bg-white

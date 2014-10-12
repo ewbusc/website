@@ -8,7 +8,7 @@ body {
      -moz-background-size: cover;
        -o-background-size: cover;
           background-size: cover;
-  padding: 2em 0 8em 0;
+  padding: 1em 0 4em 0;
 }
 
 div.logo {
@@ -17,7 +17,7 @@ div.logo {
 }
 img.logo {
   max-width: 550px;
-  padding: 40px 0 20px 20px;
+  padding: 1.8em 0;
   width: 100%;
 }
 
