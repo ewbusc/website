@@ -5,8 +5,7 @@
     %iframe{:frameborder => '0', 
             :height => '355px', 
             :scrolling => 'no', 
-            :src => 'https://www.google.com/calendar/embed?showNav=0&showPrint=0&showCalendars=0&showTz=0&mode=AGENDA&height=600&wkst=2&bgcolor=%23cccccc&src=soewob%40mailbox.sc.edu&color=%232952A3&ctz=America%2FNew_York',
-            :style => 'border:solid 1px #777;border-radius:5px;padding:5px;background-color:rgb(204,204,204);',  
+            :src => 'https://www.google.com/calendar/embed?showNav=0&showPrint=0&showCalendars=0&showTz=0&mode=AGENDA&height=600&wkst=2&bgcolor=%23cccccc&src=soewob%40mailbox.sc.edu&color=%232952A3&ctz=America%2FNew_York',  
             :width => '100%'}
   .col-md-8
     .page-header

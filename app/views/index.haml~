@@ -91,6 +91,3 @@
     .img-thumbnail
       %img.img-responsive{:src => 'images/index3.jpg'}
       %h4.text-center Support Us
-.row
-  .col-xs-12
-    %br
