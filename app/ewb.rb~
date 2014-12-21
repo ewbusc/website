@@ -23,7 +23,17 @@ module Ewb
     end
     
     get '/media' do
-      redirect "https://www.flickr.com/photos/127751746@N04/"
+      FlickRaw.api_key="f3dfc1d63e20a61e6f216aba31d9dc42"
+      FlickRaw.shared_secret="5d5d1830c0cb02ad"
+
+      list   = flickr.photos.getRecent
+
+      id     = list[0].id
+      secret = list[0].secret
+      info = flickr.photos.getInfo :photo_id => id, :secret => secret
+      puts info.title
+      
+      haml :media
     end
     
     get '/support' do

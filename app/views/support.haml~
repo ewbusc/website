@@ -64,9 +64,10 @@
 
 / Ways to Contribute                   
 .row
-  .col-xs-12.col-md-6
-    .page-header
+  .col-xs-12
+    .page-header.text-center
       %h3 Ways to Contribute
+  .col-xs-12.col-md-6
     %h4 Donate directly to the USC chapter
     %p
       You can financially support our projects by donating through the EWB-USA national website.
