@@ -67,22 +67,6 @@
   .col-xs-12
     .page-header.text-center
       %h3 Ways to Contribute
-  .col-xs-12.col-md-6
-    %h4 Donate directly to the USC chapter
-    %p
-      You can financially support our projects by donating through the EWB-USA national website.
-      Funding can be contributed for
-      = succeed "," do
-        %a{:href => 'https://ssl.charityweb.net/ewbusa/?Custom3=100216'} general chapter activities
-      or designated for a specific international project.
-    %p EWB-USA is a non-profit company, and your donation is therefore tax deductible.
-    %h3 Our Partners and Sponsors
-    %p EWB-USA at USC thanks our sponsors for their support of the La Victoria Irrigation project.
-    %ul.sponsors
-      %li Drs. Kenneth and Martha Reifsnider
-      %li Level Growth, LLC
-      %li Orange Leaf
-      %li Yoghut
   .col-xs-12.col-md-6    
     %table.table.table-bordered.table-striped
       %tr
@@ -128,4 +112,20 @@
         %td
           %ul
             %li Recognition on EWB-USC Website
+  .col-xs-12.col-md-6
+    %h4 Donate directly to the USC chapter
+    %p
+      You can financially support our projects by donating through the EWB-USA national website.
+      Funding can be contributed for
+      = succeed "," do
+        %a{:href => 'https://ssl.charityweb.net/ewbusa/?Custom3=100216'} general chapter activities
+      or designated for a specific international project.
+    %p EWB-USA is a non-profit company, and your donation is therefore tax deductible.
+    %h3 Our Partners and Sponsors
+    %p EWB-USA at USC thanks our sponsors for their support of the La Victoria Irrigation project.
+    %ul.sponsors
+      %li Drs. Kenneth and Martha Reifsnider
+      %li Level Growth, LLC
+      %li Orange Leaf
+      %li Yoghut
       

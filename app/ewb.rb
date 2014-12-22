@@ -30,5 +30,9 @@ module Ewb
       haml :support
     end
     
+    get '/contact' do
+      haml :contact
+    end
+    
   end
 end
