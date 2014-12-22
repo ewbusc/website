@@ -21,8 +21,12 @@ module Ewb
       haml :projects
     end
     
-    get '/media' do
-      redirect "https://www.flickr.com/photos/127751746@N04/sets/"
+    get '/pictures' do
+      redirect 'https://www.flickr.com/photos/127751746@N04/sets/'
+    end
+    
+    get '/videos' do
+      redirect 'https://www.youtube.com/user/uscewb'
     end
     
     get '/support' do

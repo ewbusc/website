@@ -21,10 +21,10 @@
     #nav-collapse.collapse.navbar-collapse
       = render_navigation
       / Social for larger screens
-      %ul.pull-right
+      %ul.nav.navbar-nav.navbar-right.hidden-xs
         %li.icon-facebook
           %a{:href => 'https://www.facebook.com/ewbatusc'}
-            %img{:src => 'images/icon-facebook.png', :width => '20px'}
+            %img{:src => 'images/icon-facebook.png', :width => '20px', :target => '_blank'}
         %li.icon-twitter
           %a{:href => 'https://twitter.com/ewbusa_usc'}
             %img{:src => 'images/icon-twitter.png', :width => '20px'}

@@ -35,19 +35,5 @@
             View Upcoming Events
   .col-xs-12
     %p.text-center
-      Visit us on our: 
-      %b Facebook 
-      = succeed "," do
-        %a{:href => 'https://www.facebook.com/ewbatusc'} Page
-      = succeed "," do
-        %a{:href => 'https://www.facebook.com/groups/38632526173/'} Group
-      = succeed "," do
-        %a{:href => 'https://twitter.com/ewbusa_usc'} Twitter
-      = succeed "," do
-        %a{:href => 'https://www.youtube.com/user/uscewb'} Youtube
-      and 
-      = succeed "." do 
-        %a{:href => 'https://www.flickr.com/photos/127751746@N04/'} Flickr
-      %br
       %b &copy; 2014 University of South Carolina EWB-USA Student Chapter.
       
