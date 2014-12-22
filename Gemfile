@@ -6,4 +6,3 @@ gem 'puma'
 
 gem 'sinatra-simple-navigation'
 
-gem 'flickraw'

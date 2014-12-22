@@ -79,6 +79,8 @@
       chapters engaged in over 400 active programs in 45 countries 
       around the world.
 .row
+  .col-xs-12
+    %br
   .col-xs-12.col-md-4
     %a.thumbnail{"data-lightbox" => 'index', 
        :href => 'images/index1.jpg'}

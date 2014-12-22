@@ -5,7 +5,7 @@ SimpleNavigation::Configuration.run do |navigation|
     primary.item :home, 'Home', '/'
     primary.item :events, 'Events', '/events'
     primary.item :projects, 'Projects', '/projects'
-    primary.item :media, 'Media', '/media'
+    primary.item :media, 'Media', '/media', :link => {:target => '_blank'}
     primary.item :support, 'Support Us', '/support'
   end
 end

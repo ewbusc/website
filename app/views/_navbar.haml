@@ -7,6 +7,7 @@
         %span.icon-bar
         %span.icon-bar
       %a.navbar-brand{href: '/'}
+      / Social for Mobile
       .visible-xs
         .pull-right
           %a{:href => 'https://www.facebook.com/ewbatusc'}
@@ -15,11 +16,11 @@
             %img{:src => 'images/icon-twitter-hover.png', :width => '48px'}
           %a{:href => 'https://www.youtube.com/user/uscewb'}
             %img{:src => 'images/icon-youtube-hover.png', :width => '48px'}
-          %a{:href => ''}
+          %a{:href => 'https://www.linkedin.com/groups/Engineers-Without-Borders-University-South-8228144'}
             %img{:src => 'images/icon-linkedin-hover.png', :width => '48px'}
     #nav-collapse.collapse.navbar-collapse
-      %ul.nav.navbar-nav.navbar-left
-        = render_navigation
+      = render_navigation
+      / Social for larger screens
       %ul.nav.navbar-nav.navbar-right.hidden-xs
         %li.icon-facebook
           %a{:href => 'https://www.facebook.com/ewbatusc'}
@@ -31,6 +32,6 @@
           %a{:href => 'https://www.youtube.com/user/uscewb'}
             %img{:src => 'images/icon-youtube.png', :width => '20px'}
         %li.icon-linkedin
-          %a{:href => ''}
+          %a{:href => 'https://www.linkedin.com/groups/Engineers-Without-Borders-University-South-8228144'}
             %img{:src => 'images/icon-linkedin.png', :width => '20px'}
             

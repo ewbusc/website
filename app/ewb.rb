@@ -2,7 +2,6 @@ require 'rubygems'
 require 'sinatra'
 require 'sinatra/simple-navigation'
 require 'haml'
-require 'flickraw'
 
 set :haml, :format => :html5
 
@@ -23,7 +22,7 @@ module Ewb
     end
     
     get '/media' do
-      redirect "https://www.flickr.com/photos/127751746@N04/"
+      redirect "https://www.flickr.com/photos/127751746@N04/sets/"
     end
     
     get '/support' do
