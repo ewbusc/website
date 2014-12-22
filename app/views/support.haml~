@@ -3,11 +3,11 @@
 
 / Row one, 1 across
 .row
-  .col-xs-12.col-md-6.col-md-push-3
+  .col-xs-6.col-xs-push-3.col-md-6.col-md-push-3
     %a.thumbnail{:href => 'http://www.sc.edu/'}
       .row
         .col-xs-12.col-md-4
-          %img{:src => 'images/usc.png',
+          %img.center-block{:src => 'images/usc.png',
                :height => '200px'}/
         .col-xs-12.col-md-8
           %h3 University of South Carolina
@@ -16,7 +16,7 @@
 
 / Row Two, 2 across
 .row
-  .col-xs-12.col-md-6
+  .col-xs-5.col-md-5.col-md-offset-1
     %a.thumbnail{:href => "http://why.knovel.com/"}
       .row
         .col-xs-12.col-md-4
@@ -27,7 +27,7 @@
             Knovel is a web-based application integrating technical 
             information with analytical and search tools to drive 
             innovation and deliver answers engineers can trust.
-  .col-xs-12.col-md-6 
+  .col-xs-5.col-md-5
     %a.thumbnail{:href => "http://www.boeing.com/boeing/"}
       .row
         .col-xs-12.col-md-4
@@ -41,22 +41,22 @@
 
 / Row three, 4 across
 .row
-  .col-xs-12.col-md-3
+  .col-xs-3.col-md-2.col-md-offset-2
     %a.thumbnail{:href => 'http://www.springvalleyrotary.com/'}
       %img.img-rounded.img-thumbnail{:src => 'images/rotary.gif'}
       %h4.text-center
         Spring Valley Rotary International
-  .col-xs-12.col-md-3
+  .col-xs-3.col-md-2
     %a.thumbnail{:href => 'http://www.aspe.org/'}
       %img.img-rounded.img-thumbnail{:src => 'images/aspe.png'}
       %h4.text-center
         American Society of Plumbing Engineers
-  .col-xs-12.col-md-3
+  .col-xs-3.col-md-2
     %a.thumbnail{:href => 'http://www.asce.org/'}
       %img.img-rounded.img-thumbnail{:src => 'images/asce.png'}
       %h4.text-center
         The American Society of Civil Engineers
-  .col-xs-12.col-md-3
+  .col-xs-3.col-md-2
     %a.thumbnail{:href => 'http://www.same.org/'}
       %img.img-rounded.img-thumbnail{:src => 'images/same.jpg'}
       %h4.text-center 

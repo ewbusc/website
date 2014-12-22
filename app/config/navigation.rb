@@ -7,6 +7,5 @@ SimpleNavigation::Configuration.run do |navigation|
     primary.item :projects, 'Projects', '/projects'
     primary.item :media, 'Media', '/media'
     primary.item :support, 'Support Us', '/support'
-    primary.item :contact, 'Contact', '/contact'
   end
 end
