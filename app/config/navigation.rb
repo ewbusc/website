@@ -12,3 +12,4 @@ SimpleNavigation::Configuration.run do |navigation|
     primary.item :contact, 'Contact', '/contact'
   end
 end
+
