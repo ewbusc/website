@@ -11,7 +11,12 @@ GEM
       tilt
     i18n (0.6.11)
     json (1.8.1)
+    mail (2.6.3)
+      mime-types (>= 1.16, < 3)
+    mime-types (2.5)
     minitest (5.4.0)
+    pony (1.11)
+      mail (>= 2.0)
     puma (2.9.0)
       rack (>= 1.1, < 2.0)
     rack (1.5.2)
@@ -35,6 +40,7 @@ PLATFORMS
 
 DEPENDENCIES
   haml
+  pony
   puma
   sinatra
   sinatra-simple-navigation

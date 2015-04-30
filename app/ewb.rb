@@ -2,6 +2,7 @@ require 'rubygems'
 require 'sinatra'
 require 'sinatra/simple-navigation'
 require 'haml'
+require 'pony'
 
 set :haml, :format => :html5
 
@@ -31,6 +32,35 @@ module Ewb
     
     get '/support' do
       haml :support
+    end
+    
+    get '/contact' do
+      haml :contact
+    end
+    
+    post '/contact' do
+      name = params[:name]
+      body = params[:body]
+      
+      Pony.options = {
+        :via => :smtp,
+        :via_options => {
+          :address => 'smtp.sendgrid.net',
+          :port => '587',
+          :domain => 'heroku.com',
+          :user_name => ENV['SENDGRID_USERNAME'],
+          :password => ENV['SENDGRID_PASSWORD'],
+          :authentication => :plain,
+          :enable_starttls_auto => true
+        }
+      }
+      
+      Pony.mail(:to => 'deese.john@gmail.com',
+                :from => "no-reply@ewb-usc.org", 
+                :subject => "EWB-USC #{name}", 
+                :body => "#{body}")
+
+      haml :contact
     end
     
   end
