@@ -28,6 +28,8 @@ GEM
       rack (~> 1.4)
       rack-protection (~> 1.4)
       tilt (~> 1.3, >= 1.3.4)
+    sinatra-flash (0.3.0)
+      sinatra (>= 1.0.0)
     sinatra-simple-navigation (3.7.0)
       simple-navigation (>= 3.12.0)
     thread_safe (0.3.4)
@@ -43,4 +45,5 @@ DEPENDENCIES
   pony
   puma
   sinatra
+  sinatra-flash
   sinatra-simple-navigation

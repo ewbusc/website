@@ -1,5 +1,6 @@
 require 'rubygems'
 require 'sinatra'
+require 'sinatra/flash'
 require 'sinatra/simple-navigation'
 require 'haml'
 require 'pony'
@@ -8,6 +9,9 @@ set :haml, :format => :html5
 
 module Ewb
   class App < Sinatra::Base
+    enable :sessions
+    
+    register Sinatra::Flash
     register Sinatra::SimpleNavigation
     
     get '/' do
@@ -40,28 +44,32 @@ module Ewb
     
     post '/contact' do
       name = params[:name]
+      email = params[:email]
       body = params[:body]
       
-      Pony.options = {
-        :via => :smtp,
-        :via_options => {
-          :address => 'smtp.sendgrid.net',
-          :port => '587',
-          :domain => 'heroku.com',
-          :user_name => ENV['SENDGRID_USERNAME'],
-          :password => ENV['SENDGRID_PASSWORD'],
-          :authentication => :plain,
-          :enable_starttls_auto => true
-        }
-      }
+      if email.to_s == ''
+        flash[:warning] = 'We require your email!'
+        redirect '/contact'
+      end
       
-      Pony.mail(:to => 'soewob@mailbox.sc.edu',
-                :from => "no-reply@ewb-usc.org", 
-                :subject => "EWB-USC #{name}", 
-                :body => "#{body}")
-
-      haml :contact
+      flash[:success] = 'Email Sent!'
+      redirect '/'
     end
     
   end
 end
+
+module Sinatra
+  module Flash
+    module Style
+      def styled_flash(key=:flash)
+        return "" if flash(key).empty?
+        id = (key == :flash ? "flash" : "flash_#{key}")
+        close = '<a class="close" data-dismiss="alert" href="#">×</a>'
+        messages = flash(key).collect {|message| " <div class='alert alert-#{message[0]}'>#{close}\n #{message[1]}</div>\n"}
+        "<div id='#{id}'>\n" + messages.join + "</div>"
+      end
+    end
+  end
+end
+

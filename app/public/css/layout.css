@@ -29,6 +29,10 @@ img.logo {
   background-color: rgba(255, 255, 255, 1.0);
 }
 
+#flash {
+  margin-top: 20px;
+}
+
 .footer-bg {
   background-color: rgba(20, 20, 20, 0.7);
   border-radius: 0 0 12px 12px;
