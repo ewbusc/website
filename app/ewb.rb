@@ -52,6 +52,24 @@ module Ewb
         redirect '/contact'
       end
       
+      Pony.options = {
+        :via => :smtp,
+        :via_options => {
+          :address => 'smtp.sendgrid.net',
+          :port => '587',
+          :domain => 'heroku.com',
+          :user_name => ENV['SENDGRID_USERNAME'],
+          :password => ENV['SENDGRID_PASSWORD'],
+          :authentication => :plain,
+          :enable_starttls_auto => true
+        }
+      }
+
+      Pony.mail(:to => 'soewob@mailbox.sc.edu',
+                :from => "no-reply@ewb-usc.org",
+                :subject => "EWB-USC #{name}",
+                :body => "#{body}")
+      
       flash[:success] = 'Email Sent!'
       redirect '/'
     end
