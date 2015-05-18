@@ -66,7 +66,7 @@ module Ewb
       }
 
       Pony.mail(:to => 'soewob@mailbox.sc.edu',
-                :from => "no-reply@ewb-usc.org",
+                :from => "#{email}",
                 :subject => "EWB-USC #{name}",
                 :body => "#{body}")
       
