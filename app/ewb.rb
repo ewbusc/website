@@ -52,6 +52,11 @@ module Ewb
         redirect '/contact'
       end
       
+      Pony.mail(:to => 'soewob@mailbox.sc.edu',
+                :from => "#{email}",
+                :subject => "EWB-USC #{name}",
+                :body => "#{body}")
+      
       Pony.options = {
         :via => :smtp,
         :via_options => {
@@ -64,11 +69,6 @@ module Ewb
           :enable_starttls_auto => true
         }
       }
-
-      Pony.mail(:to => 'soewob@mailbox.sc.edu',
-                :from => "#{email}",
-                :subject => "EWB-USC #{name}",
-                :body => "#{body}")
       
       flash[:success] = 'Email Sent!'
       redirect '/'

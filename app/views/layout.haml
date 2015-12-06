@@ -16,7 +16,9 @@
         .col-xs-12.nav-bg
           = haml(:_navbar)
         .col-xs-12.bg-white
+          / Flash Messages After Email is Sent
           = styled_flash
+          / Yields to the haml called for the route
           = yield
         .col-xs-12.footer-bg
           = haml(:_footer)
