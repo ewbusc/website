@@ -19,9 +19,10 @@
           %a{:href => 'https://www.linkedin.com/groups/Engineers-Without-Borders-University-South-8228144', :target => '_blank'}
             %img{:src => 'images/icon-linkedin-hover.png', :width => '48px'}
     #nav-collapse.collapse.navbar-collapse
+      -# Rendered Nagivation can be found in /app/config/navigation.rb
       = render_navigation
       / Social for larger screens
-      %ul.nav.navbar-nav.navbar-right.hidden-sm
+      %ul{:class => 'nav navbar-nav navbar-right visible-md visible-lg'}
         %li.icon-facebook
           %a{:href => 'https://www.facebook.com/ewbatusc', :target => '_blank'}
             %img{:src => 'images/icon-facebook.png', :height => '18px'}
