@@ -42,6 +42,10 @@ module Ewb
       haml :contact
     end
     
+    get '/garnetgate' do
+      redirect 'https://garnetgate.sa.sc.edu/organization/ewob'
+    end
+    
     post '/contact' do
       name = params[:name]
       email = params[:email]
@@ -67,7 +71,7 @@ module Ewb
           :password => ENV['SENDGRID_PASSWORD'],
           :authentication => :plain,
           :enable_starttls_auto => true
-        }
+        },
       }
       
       flash[:success] = 'Email Sent!'
