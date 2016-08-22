@@ -30,10 +30,6 @@ module Ewb
       redirect 'https://www.flickr.com/photos/127751746@N04/sets/'
     end
     
-    get '/videos' do
-      redirect 'https://www.youtube.com/user/uscewb'
-    end
-    
     get '/support' do
       haml :support
     end

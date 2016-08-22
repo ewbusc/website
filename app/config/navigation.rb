@@ -7,7 +7,6 @@ SimpleNavigation::Configuration.run do |navigation|
     primary.item :events, 'Events', '/events'
     primary.item :projects, 'Projects', '/projects'
     primary.item :pictures, 'Pictures', '/pictures', :link => {:target => '_blank'}
-    primary.item :videos, 'Videos', '/videos', :link => {:target => '_blank'}
     primary.item :garnetgate, 'Garnet Gate', '/garnetgate'
     primary.item :support, 'Support Us', '/support'
     primary.item :contact, 'Contact', '/contact'
